@@ -145,10 +145,15 @@ p{
     text-align: justify;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif}
 
+    ul{
+        padding: 10px;
+    }
+
 li{
     color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 500;}
+    font-weight: 500;
+    padding: 5px;}
 
   footer{
     font-size: 16px;}
