@@ -7,21 +7,25 @@
     font-style: normal;
 }
 
-*{font-family:Arial, Helvetica, sans-serif;}
+*{font-family:Arial, Helvetica, sans-serif;
+margin: 0px;
+padding: 0px;}
+
+html{
+    height: 100vh;}
 
 body{
-    background-image: linear-gradient(to top, #242426, #575352, #5F5D5E, #00B4FB, #00CEF8, #05F2F2);
+    /* background-image: linear-gradient(to top, #242426, #575352, #5F5D5E, #00B4FB, #00CEF8, #05F2F2);
+    background-attachment: fixed;*/
+    background: url(imagens/back-phone.jpg);
     background-attachment: fixed;
-}
-label{
-    text-shadow: bold;
-    text-decoration: underline;
-    padding-left: 5px;
-}
+    background-size: cover;
+    background-position: center center;}
+
 select{
     background-color: #00b4fbc2;
-padding: 3px;
-}
+ padding: 3px;}
+
 h1{
     font-family:'berkahi';
     text-align: center;
@@ -32,8 +36,8 @@ h1{
     header{
         background-image: linear-gradient(to top,transparent, #00B4FB);
         padding: 6px 0px 6px 0px;
-    border-radius: 10px;
-}
+    border-radius: 10px;}
+
     header h1{
         font-size: 50px;
         margin-bottom: 0px;
@@ -44,27 +48,61 @@ h1{
             font-size: 25px;
            text-align: center;
         margin-top: 1px; } 
+
+        span#burguer{
+            background-color: rgba(0, 0, 0, 0.521);
+            color: #00B4FB;
+            display: block;
+            text-align: center;
+            padding: 10px;
+            
+
+        }
     
    
-    nav{
-    background-color: rgba(0, 0, 0, 0.116);
+    menu#itens {
+    background-color: rgba(0, 0, 0, 0.521);
     padding: 10px;
-    border-radius: 10px;
-    }
+    display: none;
+}
+span#burguer{
+    background-color: rgba(0, 0, 0, 0.521);
+    color: #00CEF8;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
 
-    nav a {
-        color: rgb(0, 0, 0);
+}
+menu#itens > ul{
+    list-style-type: none;
+}
+menu#itens > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    
+    border-bottom: 2px solid;
+
+}
+
+    menu#itens a {
+        color: #00CEF8;
        margin: 20px;
        padding: 10px;
        transition-duration: .5s;
        text-decoration: none;
         }
 
-        nav a:hover{
+        menu#itens a:hover{
             color: #00CEF8;
-            background-color: #242426;
-            text-decoration: underline;
-        }
+            background-color: rgba(255, 255, 255, 0.425);
+            text-decoration: underline;}
+
+            
+
+
         main{
             background-color: rgba(255, 255, 255, 0.644);
             min-width: 300px;
@@ -79,6 +117,11 @@ h1{
 main > h1{
     background-image: linear-gradient(to right,  #00CEF8, transparent);
     padding: 5px;}
+
+    main > ul{
+        text-align: auto;
+        padding-left: 20px;
+    }
 
 aside{
     background-color: #3595a8;
@@ -131,4 +174,5 @@ footer p{
         color: black;
         padding: 10px;
     }
+
 
