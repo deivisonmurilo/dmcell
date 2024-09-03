@@ -22,9 +22,6 @@ body{
     background-size: cover;
     background-position: center center;}
 
-select{
-    background-color: #00b4fbc2;
- padding: 3px;}
 
 h1{
     font-family:'berkahi';
@@ -36,7 +33,7 @@ h1{
     header{
         background-image: linear-gradient(to top,transparent, #00B4FB);
         padding: 6px 0px 6px 0px;
-    border-radius: 10px;}
+        border-radius: 10px;}
 
     header h1{
         font-size: 50px;
@@ -55,6 +52,7 @@ h1{
             display: block;
             text-align: center;
             padding: 10px;
+            cursor: pointer;
             
 
         }
@@ -62,7 +60,6 @@ h1{
    
     menu#itens {
     background-color: rgba(0, 0, 0, 0.521);
-    padding: 10px;
     display: none;
 }
 span#burguer{
@@ -82,15 +79,15 @@ menu#itens > ul > li > a {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    
-    border-bottom: 2px solid;
+    border-bottom: 1px solid #00B4FB;
 
 }
 
     menu#itens a {
+
         color: #00CEF8;
-       margin: 20px;
-       padding: 10px;
+       
+       
        transition-duration: .5s;
        text-decoration: none;
         }

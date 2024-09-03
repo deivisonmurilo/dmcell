@@ -10,7 +10,7 @@
  <link rel="stylesheet" href="estilo/mediaquery.css">
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1 id="dmcell"> DM_Cell &#x1F4F2</h1>
     <p>Sejam todos bem-vindos!</p>
@@ -68,6 +68,14 @@
     </footer>
 
     <script>
+        function mudouTamanho() {
+            if (window.innerwidth >= 768){
+            itens.style.display = 'block'}
+        else{
+            itens.style.display = 'none'
+        } }
+
+
         function clickMenu() {
             if (itens.style.display == 'block'){
                 itens.style.display = 'none'
